@@ -14,18 +14,14 @@ function sumarMultiplesNumeros(numeros) {
 function multiplicarMultiplesNumeros(numeros) {
   let total = 1;
   for (let i = 0; i < numeros.length; i++) {
-    if (numeros[i] != 0) {
-      total = total * numeros[i];
-    }
+    total = total * numeros[i];
   }
   return total;
 }
 
 function esPar(numero) {
-  if (numero >= 0) {
-    if (numero % 2 === 0) {
-      return true;
-    }
+  if (numero % 2 === 0) {
+    return true;
   }
   return false;
 }
