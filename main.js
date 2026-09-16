@@ -20,14 +20,14 @@ function multiplicarMultiplesNumeros(numeros) {
 }
 
 function esPar(numero) {
-  if (numero % 2 === 0) {
+  if (Number.isInteger(numero) && numero % 2 === 0) {
     return true;
   }
   return false;
 }
 
 function esEntero(numero) {
-  if (numero === Math.round(numero)) {
+  if (Number.isInteger(numero)) {
     return true;
   }
   return false;
